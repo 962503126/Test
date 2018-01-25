@@ -32,7 +32,7 @@ ul{
 	line-height:300px;	/* 垂直居中 */
 	text-align:center;	/* 横向居中 */
 	position:absolute;		/* 定位 */
-	opacity:0.3
+	opacity:0.7
 }
 
 
@@ -68,63 +68,63 @@ ul li:nth-child(6)/* 选择器,选择ul下面的第六个li标签 */{
 
 /*外层*/
 ul li:nth-child(7)/* 选择器,选择ul下面的第六个li标签 */{
-	background-color: #cc9913;  
+	
 	-webkit-transform: rotateY(180deg) translateZ(250px);
 }
 
 ul li:nth-child(8)/* 选择器,选择ul下面的第五个li标签 */{
-	background-color: #0f9fcc;  
+	
 	-webkit-transform: rotateX(90deg) translateZ(250px);
 }
 ul li:nth-child(9)/* 选择器,选择ul下面的第五个li标签 */{
-	background-color: #60C;  
+	 
 	-webkit-transform: rotateX(-90deg) translateZ(250px);
 }
 ul li:nth-child(10)/* 选择器,选择ul下面的第五个li标签 */{
-	background-color: green;
+
 	-webkit-transform: rotateY(-90deg) translateZ(250px);
 }
 ul li:nth-child(11)/* 选择器,选择ul下面的第五个li标签 */{
-	background-color: #ccc;
+	
 	-webkit-transform: rotateY(90deg) translateZ(250px);
 }
 ul li:nth-child(12)/* 选择器,选择ul下面的第五个li标签 */{
-	background-color: red;
+	
 	-webkit-transform: rotate(0deg) translateZ(250px);
 }
 ul:hover li:nth-child(12){
 
-	background-color: red;
+	
 	-webkit-transform: rotate(0deg) translateZ(150px);
 
 }
 ul:hover li:nth-child(11){
 
-	background-color: #ccc;
+	
 	-webkit-transform: rotateY(90deg) translateZ(150px);
 
 }
 ul:hover li:nth-child(10){
 
-	background-color: green;
+	
 	-webkit-transform: rotateY(-90deg) translateZ(150px);
 
 }
 ul:hover li:nth-child(9){
 
-	background-color: #60C;  
+	  
 	-webkit-transform: rotateX(-90deg) translateZ(150px);
 
 }
 ul:hover li:nth-child(8){
 
-	background-color: #0f9fcc;  
+	 
 	-webkit-transform: rotateX(90deg) translateZ(150px);
 
 }
 ul:hover li:nth-child(7){
 
-	background-color: #cc9913;  
+	 
 	-webkit-transform: rotateY(180deg) translateZ(150px);
 
 }
