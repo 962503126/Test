@@ -1,0 +1,138 @@
+﻿*{
+	margin:0px;
+	padding:0px;
+}/*初始化*/
+body{
+	-webkit-transform-style:preserve-3d;/*页面主体支持3D效果*/
+	-webkit-perspective:1000px;/*视距*/
+}
+ul{
+	list-style:none;	/* 去掉li前面的点 */
+	width:500px;	/* 宽度 */
+	height:500px;	/* 高度 */
+	margin:150px auto;	/* 距离上面150像素，平行居中 */
+	position:relative;	/* 相对定位 */
+	-webkit-transform-style:preserve-3d;	/*支持3D效果*/
+	-webkit-transform:rotateX(0deg) rotateY(40deg) rotateZ(0deg);	/* 旋转 */
+	animation:zhuan 10s linear infinite;
+}
+
+.li{
+	width:200px;	/* 宽度 */
+	height:200px;	/* 高度 */
+
+	margin:50px 50px;
+	position:absolute;		/* 定位 */
+	opacity:0.9;
+}
+
+.li1{
+	width:300px;	/* 宽度 */
+	height:300px;	/* 高度 */
+	line-height:300px;	/* 垂直居中 */
+	text-align:center;	/* 横向居中 */
+	position:absolute;		/* 定位 */
+	opacity:0.3
+}
+
+
+ul li:nth-child(1)/* 选择器,选择ul下面的第一个li标签 */{
+	/* background-color:red; 背景颜色:红色 */
+	-webkit-transform:translateZ(100px);
+	
+}
+
+ul li:nth-child(2)/* 选择器,选择ul下面的第二个li标签 */{
+	/* background-color:#ccc; 背景颜色:灰色 */
+	-webkit-transform: rotateY(90deg) translateZ(100px);
+}
+
+ul li:nth-child(3)/* 选择器,选择ul下面的第三个li标签 */{
+	/*background-color:green;  背景颜色:绿色 */
+	-webkit-transform: rotateY(-90deg) translateZ(100px);
+}
+
+ul li:nth-child(4)/* 选择器,选择ul下面的第四个li标签 */{
+	/* background-color:#60C; 背景颜色:紫色 */
+	-webkit-transform: rotateX(-90deg) translateZ(100px);
+}
+ul li:nth-child(5)/* 选择器,选择ul下面的第五个li标签 */{
+	/*background-color: #0f9fcc;  背景颜色:浅蓝 */
+	-webkit-transform: rotateX(90deg) translateZ(100px);
+}
+
+ul li:nth-child(6)/* 选择器,选择ul下面的第六个li标签 */{
+	/* background-color: #cc9913; 背景颜色:淡黄 */
+	-webkit-transform: rotateY(180deg) translateZ(100px);
+}
+
+/*外层*/
+ul li:nth-child(7)/* 选择器,选择ul下面的第六个li标签 */{
+	background-color: #cc9913;  
+	-webkit-transform: rotateY(180deg) translateZ(250px);
+}
+
+ul li:nth-child(8)/* 选择器,选择ul下面的第五个li标签 */{
+	background-color: #0f9fcc;  
+	-webkit-transform: rotateX(90deg) translateZ(250px);
+}
+ul li:nth-child(9)/* 选择器,选择ul下面的第五个li标签 */{
+	background-color: #60C;  
+	-webkit-transform: rotateX(-90deg) translateZ(250px);
+}
+ul li:nth-child(10)/* 选择器,选择ul下面的第五个li标签 */{
+	background-color: green;
+	-webkit-transform: rotateY(-90deg) translateZ(250px);
+}
+ul li:nth-child(11)/* 选择器,选择ul下面的第五个li标签 */{
+	background-color: #ccc;
+	-webkit-transform: rotateY(90deg) translateZ(250px);
+}
+ul li:nth-child(12)/* 选择器,选择ul下面的第五个li标签 */{
+	background-color: red;
+	-webkit-transform: rotate(0deg) translateZ(250px);
+}
+ul:hover li:nth-child(12){
+
+	background-color: red;
+	-webkit-transform: rotate(0deg) translateZ(150px);
+
+}
+ul:hover li:nth-child(11){
+
+	background-color: #ccc;
+	-webkit-transform: rotateY(90deg) translateZ(150px);
+
+}
+ul:hover li:nth-child(10){
+
+	background-color: green;
+	-webkit-transform: rotateY(-90deg) translateZ(150px);
+
+}
+ul:hover li:nth-child(9){
+
+	background-color: #60C;  
+	-webkit-transform: rotateX(-90deg) translateZ(150px);
+
+}
+ul:hover li:nth-child(8){
+
+	background-color: #0f9fcc;  
+	-webkit-transform: rotateX(90deg) translateZ(150px);
+
+}
+ul:hover li:nth-child(7){
+
+	background-color: #cc9913;  
+	-webkit-transform: rotateY(180deg) translateZ(150px);
+
+}
+@keyframes zhuan{	/*声明一个关键帧 */
+	from{
+		transform: rotateX(0deg) rotateY(0deg) ;	/* 从x、y轴0度开始移动 */
+	}
+	to{
+		transform: rotateX(720deg) rotateY(720deg) ;	/* 移动到x、y轴360度位置 */
+	}
+}
